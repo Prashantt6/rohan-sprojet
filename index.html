@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.qfxcinemas.com/Qfx-favicon.svg">
+    <title>QFX</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            text-align: center;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 50%), url('https://png.pngtree.com/background/20230616/original/pngtree-wall-of-movie-posters-on-display-picture-image_3620105.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top; /* Adjusted to start from the top */
+            z-index: -1;
+            filter: brightness(200%); /* Adjust the brightness value (e.g., 130%) */
+        }
+
+        h1, p {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff; /* Set text color to white */
+        }
+
+        h1 {
+            font-size: 125px;
+        }
+
+        span {
+            color: rgb(223, 164, 47);
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #d4ac1c;
+        }
+
+        p {
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        h3 {
+            z-index: 1; /* Ensure the text is above the background overlay */
+            color: #ffffff; /* Set text color to white */
+            padding: 20px; /* Add padding for better visibility */
+        }
+
+        table {
+            margin: auto; /* Center the table */
+            background-color: #000000a2;
+            padding: 20px;
+            border-radius: 10px; /* Add border radius */
+            max-width: 600px; /* Limit maximum width */
+        }
+
+        td {
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        input[type="email"],
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px; /* Increase padding */
+            margin: 10px; /* Increase margin */
+            width: 80%; /* Decrease width */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 20px; /* Increase font size */
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px; /* Increase padding */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 25px; /* Increase font size */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    <div class="two">
+        <h1><span>Q</span><span style="color:white">FX</span></h1>
+        <div style="font-size: 55px;color: #fff;">CINEMAS</div>
+    </div>
+    <br><br>
+    <table>
+        <tr>
+            <td>
+                <p style="font-size: 50px;">Register</p> <br><br>
+                <form style="font-size: 20px;">
+                    Enter your first name<br><input type="text" name="fname"><br><br>
+                    Enter your last name<br><input type="text" name="lname"><br><br>
+                    Enter your Email address<br><input type="email" name="email"><br><br>
+                    Create a password<br><input type="password" name="pwd"><br><br>
+                    Retype the password<br><input type="password" name="pwd"><br><br>
+                    <button type="submit">Resister</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
